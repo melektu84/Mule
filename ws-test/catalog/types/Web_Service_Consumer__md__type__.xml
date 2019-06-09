@@ -1,0 +1,1179 @@
+<metadata__catalog__entry>
+  <version>5.2.0.0</version>
+  <types class="tree-map">
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>DeleteUserRequest</id>
+        <displayName>DeleteUserRequest</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:id</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                      <localPart>int</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                    <localPart>id</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+          <localPart>DeleteUserRequest</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:sch=&quot;http://www.craftsoftware.com/users&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.craftsoftware.com/users&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.craftsoftware.com/users&quot;&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;DeleteUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;DeleteUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetAllUsersRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;GetAllUsersResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Users&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;UpdateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;UpdateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;CreateUser&quot; type=&quot;tns:CreateUser&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;	&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;User&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;CreateUser&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding>windows-1252</encoding>
+          <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://www.craftsoftware.com/users</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>DeleteUserResponse</id>
+        <displayName>DeleteUserResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+          <localPart>DeleteUserResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:sch=&quot;http://www.craftsoftware.com/users&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.craftsoftware.com/users&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.craftsoftware.com/users&quot;&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;DeleteUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;DeleteUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetAllUsersRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;GetAllUsersResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Users&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;UpdateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;UpdateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;CreateUser&quot; type=&quot;tns:CreateUser&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;	&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;User&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;CreateUser&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://www.craftsoftware.com/users</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>GetAllUsersRequest</id>
+        <displayName>GetAllUsersRequest</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields/>
+        <rootElement>
+          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+          <localPart>GetAllUsersRequest</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:sch=&quot;http://www.craftsoftware.com/users&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.craftsoftware.com/users&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.craftsoftware.com/users&quot;&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;DeleteUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;DeleteUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetAllUsersRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;GetAllUsersResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Users&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;UpdateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;UpdateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;CreateUser&quot; type=&quot;tns:CreateUser&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;	&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;User&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;CreateUser&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://www.craftsoftware.com/users</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>GetAllUsersResponse</id>
+        <displayName>GetAllUsersResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey" reference="../../../../../org.mule.common.metadata.DefaultMetaDataKey"/>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:Users</name>
+            <model class="org.mule.common.metadata.DefaultListMetaDataModel">
+              <dataType>LIST</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                      <localPart>User</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                  <org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                    <maxOccurs>2147483647</maxOccurs>
+                    <minOccurs>0</minOccurs>
+                  </org.mule.common.metadata.property.xml.UnboundMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+                <dataType>XML</dataType>
+                <metaDataModelPropertiesManager>
+                  <properties/>
+                </metaDataModelPropertiesManager>
+                <fields>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns0:id</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>INTEGER</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                            <localPart>id</localPart>
+                            <prefix>ns0</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns0:fist</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName>
+                              <namespaceURI>http://www.w3.org/2001/XMLSchema</namespaceURI>
+                              <localPart>string</localPart>
+                              <prefix></prefix>
+                            </typeQName>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                            <localPart>fist</localPart>
+                            <prefix>ns0</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns0:last</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                            <localPart>last</localPart>
+                            <prefix>ns0</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                  <org.mule.common.metadata.DefaultMetaDataField>
+                    <name>ns0:department</name>
+                    <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                      <dataType>STRING</dataType>
+                      <metaDataModelPropertiesManager>
+                        <properties>
+                          <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                            <typeQName reference="../../../../../../org.mule.common.metadata.DefaultMetaDataField[2]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                          </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                        </properties>
+                      </metaDataModelPropertiesManager>
+                    </model>
+                    <accessType>READ_WRITE</accessType>
+                    <metaDataFieldPropertyManager>
+                      <properties>
+                        <org.mule.common.metadata.property.QNameMetaDataProperty>
+                          <name>
+                            <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                            <localPart>department</localPart>
+                            <prefix>ns0</prefix>
+                          </name>
+                        </org.mule.common.metadata.property.QNameMetaDataProperty>
+                      </properties>
+                    </metaDataFieldPropertyManager>
+                  </org.mule.common.metadata.DefaultMetaDataField>
+                </fields>
+                <rootElement>
+                  <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                  <localPart>GetAllUsersResponse</localPart>
+                  <prefix>ns0</prefix>
+                </rootElement>
+                <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                  <schemas>
+                    <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:sch=&quot;http://www.craftsoftware.com/users&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.craftsoftware.com/users&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.craftsoftware.com/users&quot;&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;DeleteUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;DeleteUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetAllUsersRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;GetAllUsersResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Users&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;UpdateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;UpdateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;CreateUser&quot; type=&quot;tns:CreateUser&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;	&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;User&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;CreateUser&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+                  </schemas>
+                  <encoding reference="../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                  <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+                </schemas>
+                <namespaceManager>
+                  <namespacePrefix class="tree-map">
+                    <entry>
+                      <string>http://www.craftsoftware.com/users</string>
+                      <string>ns0</string>
+                    </entry>
+                  </namespacePrefix>
+                </namespaceManager>
+              </model>
+              <isArray>false</isArray>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                    <localPart>Users</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+          <localPart>GetAllUsersResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>GetUserRequest</id>
+        <displayName>GetUserRequest</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>GetUserRequest</id>
+                <displayName>GetUserRequest</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:id</name>
+            <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+              <dataType>INTEGER</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName reference="../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                    <localPart>id</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+          <localPart>GetUserRequest</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas>
+            <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:sch=&quot;http://www.craftsoftware.com/users&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.craftsoftware.com/users&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.craftsoftware.com/users&quot;&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;DeleteUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;DeleteUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetAllUsersRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;GetAllUsersResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Users&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;UpdateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;UpdateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;CreateUser&quot; type=&quot;tns:CreateUser&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;	&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;User&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;CreateUser&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+          </schemas>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+        </schemas>
+        <namespaceManager>
+          <namespacePrefix class="tree-map">
+            <entry>
+              <string>http://www.craftsoftware.com/users</string>
+              <string>ns0</string>
+            </entry>
+          </namespacePrefix>
+        </namespaceManager>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+    <entry>
+      <org.mule.common.metadata.DefaultMetaDataKey>
+        <id>GetUserResponse</id>
+        <displayName>GetUserResponse</displayName>
+        <category>DEFAULT</category>
+        <metaDataKeyPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+          </properties>
+        </metaDataKeyPropertiesManager>
+      </org.mule.common.metadata.DefaultMetaDataKey>
+      <org.mule.common.metadata.DefaultXmlMetaDataModel>
+        <dataType>XML</dataType>
+        <metaDataModelPropertiesManager>
+          <properties>
+            <org.mule.common.metadata.property.TextBasedExampleMetaDataModelProperty/>
+            <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/>
+            <org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+              <metaDataKey class="org.mule.common.metadata.DefaultMetaDataKey">
+                <id>GetUserResponse</id>
+                <displayName>GetUserResponse</displayName>
+                <category>DEFAULT</category>
+                <metaDataKeyPropertiesManager>
+                  <properties>
+                    <org.mule.common.metadata.key.property.dsql.DsqlFromMetaDataKeyProperty/>
+                  </properties>
+                </metaDataKeyPropertiesManager>
+              </metaDataKey>
+              <derivedStructure>false</derivedStructure>
+              <generatedStructure>false</generatedStructure>
+            </org.mule.common.metadata.property.StructureIdentifierMetaDataModelProperty>
+          </properties>
+        </metaDataModelPropertiesManager>
+        <fields>
+          <org.mule.common.metadata.DefaultMetaDataField>
+            <name>ns0:User</name>
+            <model class="org.mule.common.metadata.DefaultXmlMetaDataModel">
+              <dataType>XML</dataType>
+              <metaDataModelPropertiesManager>
+                <properties>
+                  <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                    <typeQName>
+                      <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                      <localPart>User</localPart>
+                      <prefix></prefix>
+                    </typeQName>
+                  </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                </properties>
+              </metaDataModelPropertiesManager>
+              <fields>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:id</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>INTEGER</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                          <localPart>id</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:fist</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                          <localPart>fist</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:last</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                          <localPart>last</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+                <org.mule.common.metadata.DefaultMetaDataField>
+                  <name>ns0:department</name>
+                  <model class="org.mule.common.metadata.DefaultSimpleMetaDataModel">
+                    <dataType>STRING</dataType>
+                    <metaDataModelPropertiesManager>
+                      <properties>
+                        <org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                          <typeQName reference="../../../../../../../../../../../../entry[4]/org.mule.common.metadata.DefaultXmlMetaDataModel/fields/org.mule.common.metadata.DefaultMetaDataField/model/model/fields/org.mule.common.metadata.DefaultMetaDataField[2]/model/metaDataModelPropertiesManager/properties/org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty/typeQName"/>
+                        </org.mule.common.metadata.property.xml.SchemaTypeMetaDataProperty>
+                      </properties>
+                    </metaDataModelPropertiesManager>
+                  </model>
+                  <accessType>READ_WRITE</accessType>
+                  <metaDataFieldPropertyManager>
+                    <properties>
+                      <org.mule.common.metadata.property.QNameMetaDataProperty>
+                        <name>
+                          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                          <localPart>department</localPart>
+                          <prefix>ns0</prefix>
+                        </name>
+                      </org.mule.common.metadata.property.QNameMetaDataProperty>
+                    </properties>
+                  </metaDataFieldPropertyManager>
+                </org.mule.common.metadata.DefaultMetaDataField>
+              </fields>
+              <rootElement>
+                <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                <localPart>GetUserResponse</localPart>
+                <prefix>ns0</prefix>
+              </rootElement>
+              <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+                <schemas>
+                  <string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:sch=&quot;http://www.craftsoftware.com/users&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://www.craftsoftware.com/users&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; elementFormDefault=&quot;qualified&quot; targetNamespace=&quot;http://www.craftsoftware.com/users&quot;&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;DeleteUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;DeleteUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;GetAllUsersRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;GetAllUsersResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot; name=&quot;Users&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+    &lt;xs:element name=&quot;UpdateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;User&quot; type=&quot;tns:User&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;UpdateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserRequest&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+			&lt;xs:sequence&gt;&#xd;
+				&lt;xs:element name=&quot;CreateUser&quot; type=&quot;tns:CreateUser&quot;/&gt;&#xd;
+			&lt;/xs:sequence&gt;	&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;&#xd;
+	&#xd;
+	&lt;xs:element name=&quot;CreateUserResponse&quot;&gt;&#xd;
+		&lt;xs:complexType&gt;&#xd;
+		&lt;/xs:complexType&gt;&#xd;
+	&lt;/xs:element&gt;	&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;User&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;id&quot; type=&quot;xs:int&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+	&#xd;
+	&lt;xs:complexType name=&quot;CreateUser&quot;&gt;&#xd;
+		&lt;xs:sequence&gt;&#xd;
+			&lt;xs:element name=&quot;fist&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;last&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+			&lt;xs:element name=&quot;department&quot; type=&quot;xs:string&quot;/&gt;&#xd;
+		&lt;/xs:sequence&gt;&#xd;
+	&lt;/xs:complexType&gt;&#xd;
+&lt;/xs:schema&gt;</string>
+                </schemas>
+                <encoding reference="../../../../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+                <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+              </schemas>
+              <namespaceManager>
+                <namespacePrefix class="tree-map">
+                  <entry>
+                    <string>http://www.craftsoftware.com/users</string>
+                    <string>ns0</string>
+                  </entry>
+                </namespacePrefix>
+              </namespaceManager>
+            </model>
+            <accessType>READ_WRITE</accessType>
+            <metaDataFieldPropertyManager>
+              <properties>
+                <org.mule.common.metadata.property.QNameMetaDataProperty>
+                  <name>
+                    <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+                    <localPart>User</localPart>
+                    <prefix>ns0</prefix>
+                  </name>
+                </org.mule.common.metadata.property.QNameMetaDataProperty>
+              </properties>
+            </metaDataFieldPropertyManager>
+          </org.mule.common.metadata.DefaultMetaDataField>
+        </fields>
+        <rootElement>
+          <namespaceURI>http://www.craftsoftware.com/users</namespaceURI>
+          <localPart>GetUserResponse</localPart>
+          <prefix>ns0</prefix>
+        </rootElement>
+        <schemas class="org.mule.common.metadata.StringBasedSchemaProvider">
+          <schemas reference="../../fields/org.mule.common.metadata.DefaultMetaDataField/model/schemas/schemas"/>
+          <encoding reference="../../../../entry/org.mule.common.metadata.DefaultXmlMetaDataModel/schemas/encoding"/>
+          <baseUri>file:/C:/Mulesoft/AnypointStudio3.9/AnypointStudio/http:/api.icraftsoft.net:5858/ws/users.wsdl</baseUri>
+        </schemas>
+        <namespaceManager reference="../fields/org.mule.common.metadata.DefaultMetaDataField/model/namespaceManager"/>
+      </org.mule.common.metadata.DefaultXmlMetaDataModel>
+    </entry>
+  </types>
+  <connectorName>Web_Service_Consumer</connectorName>
+</metadata__catalog__entry>
